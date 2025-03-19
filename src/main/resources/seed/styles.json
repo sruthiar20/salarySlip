@@ -1,0 +1,726 @@
+[
+  {
+    "styleId": "AUSTYLEBS001",
+    "name": "Boys Shirt-Plain",
+    "pattern": "BOYS SHIRT",
+    "departmentRates": {
+      "Cutting": 9,
+      "Patti Ironing & Belt Ironing": 4.5,
+      "Singer": 38,
+      "PowerTable": 4,
+      "kajaButton": 5,
+      "Checking": 2,
+      "Ironing": 3
+    }
+  },
+  {
+    "styleId": "AUSTYLEBS002",
+    "name": "Boys Shirt-Double side patti, pocket & sleeve piping",
+    "pattern": "BOYS SHIRT",
+    "departmentRates": {
+      "Cutting": 9,
+      "Patti Ironing & Belt Ironing": 4.5,
+      "Singer": 42,
+      "PowerTable": 5,
+      "kajaButton": 5,
+      "Checking": 2,
+      "Ironing": 3
+    }
+  },
+  {
+    "styleId": "AUSTYLEBS003",
+    "name": "Boys Shirt-one side patti,pocket & sleeve piping",
+    "pattern": "BOYS SHIRT",
+    "departmentRates": {
+      "Cutting": 9,
+      "Patti Ironing & Belt Ironing": 4.5,
+      "Singer": 44,
+      "PowerTable": 5,
+      "kajaButton": 5,
+      "Checking": 2,
+      "Ironing": 3
+    }
+  },
+  {
+    "styleId": "AUSTYLEBS004",
+    "name": "Boys Full Sleeve Shirt",
+    "pattern": "BOYS SHIRT",
+    "departmentRates": {
+      "Cutting": 11,
+      "Patti Ironing & Belt Ironing": 6.5,
+      "Singer": 55,
+      "PowerTable": 5,
+      "kajaButton": 7,
+      "Checking": 2,
+      "Ironing": 3
+    }
+  },
+
+  {
+    "styleId": "AUSTYLEGS001",
+    "name": "Girls Plain & High Neck",
+    "pattern": "GIRLS SHIRT",
+    "departmentRates": {
+      "Cutting": 7,
+      "Patti Ironing & Belt Ironing": 4.5,
+      "Singer": 29,
+      "PowerTable": 5,
+      "kajaButton": 5,
+      "Checking": 2,
+      "Ironing": 3
+    }
+  },
+  {
+    "styleId": "AUSTYLEGS002",
+    "name": "Girls Shirt-3/4 Sleeve",
+    "pattern": "GIRLS SHIRT",
+    "departmentRates": {
+      "Cutting": 7,
+      "Patti Ironing & Belt Ironing": 4.5,
+      "Singer": 30,
+      "PowerTable": 7,
+      "kajaButton": 5,
+      "Checking": 2,
+      "Ironing": 3
+    }
+  },
+  {
+    "styleId": "AUSTYLEGS003",
+    "name": "Girls Shirt Puff Sleeve & Butterfly Collar (PowerTable Piping)",
+    "pattern": "GIRLS SHIRT",
+    "departmentRates": {
+      "Cutting": 7,
+      "Patti Ironing & Belt Ironing": 4.5,
+      "Singer": 40,
+      "PowerTable": 6,
+      "kajaButton": 5,
+      "Checking": 2,
+      "Ironing": 3
+    }
+  },
+  {
+    "styleId": "AUSTYLEGS004",
+    "name": "Girls Shirt Puff Sleeve & Butterfly Collar (Singer Piping)",
+    "pattern": "GIRLS SHIRT",
+    "departmentRates": {
+      "Cutting": 7,
+      "Patti Ironing & Belt Ironing": 4.5,
+      "Singer": 40,
+      "PowerTable": 7,
+      "kajaButton": 5,
+      "Checking": 2,
+      "Ironing": 3
+    }
+  },
+  {
+    "styleId": "AUSTYLEGS005",
+    "name": "Double Side Patti, Pocket & Sleeve Piping & Butterfly Collar",
+    "pattern": "GIRLS SHIRT",
+    "departmentRates": {
+      "Cutting": 7,
+      "Patti Ironing & Belt Ironing": 4.5,
+      "Singer": 44,
+      "PowerTable": 5,
+      "kajaButton": 5,
+      "Checking": 2,
+      "Ironing": 3
+    }
+  },
+  {
+    "styleId": "AUSTYLEGS006",
+    "name": "Girls Full Sleeve Shirt",
+    "pattern": "GIRLS SHIRT",
+    "departmentRates": {
+      "Cutting": 11,
+      "Patti Ironing & Belt Ironing": 6.5,
+      "Singer": 50,
+      "PowerTable": 5,
+      "kajaButton": 7,
+      "Checking": 2,
+      "Ironing": 3
+    }
+  },
+
+  {
+    "styleId": "AUSTYLEST001",
+    "name": "High Neck ZIP Sudi Top",
+    "pattern": "SUDI TOP",
+    "departmentRates": {
+      "Cutting": 6,
+      "Patti Ironing & Belt Ironing": 1.5,
+      "Singer": 35,
+      "PowerTable": 8,
+      "kajaButton": 0,
+      "Checking": 2,
+      "Ironing": 3.5
+    }
+  },
+  {
+    "styleId": "AUSTYLEST002",
+    "name": "U Sudi Top 3/4",
+    "pattern": "SUDI TOP",
+    "departmentRates": {
+      "Cutting": 6,
+      "Patti Ironing & Belt Ironing": 1.5,
+      "Singer": 20,
+      "PowerTable": 10,
+      "kajaButton": 0,
+      "Checking": 2,
+      "Ironing": 3.5
+    }
+  },
+
+  {
+    "styleId": "AUSTYLEP001",
+    "name": "Boys Pant",
+    "pattern": "PANT",
+    "departmentRates": {
+      "Cutting": 7,
+      "Patti Ironing & Belt Ironing": 2,
+      "Singer": 70,
+      "PowerTable": 10,
+      "kajaButton": 0,
+      "Checking": 2,
+      "Ironing": 3.5
+    }
+  },
+  {
+    "styleId": "AUSTYLEG001",
+    "name": "Girls Pant",
+    "pattern": "PANT",
+    "departmentRates": {
+      "Cutting": 7,
+      "Patti Ironing & Belt Ironing": 2,
+      "Singer": 45,
+      "PowerTable": 15,
+      "kajaButton": 0,
+      "Checking": 2,
+      "Ironing": 3.5
+    }
+  },
+
+  {
+    "styleId": "AUSTYLETR001",
+    "name": "Boys Trouser-Plain",
+    "pattern": "TROUSER",
+    "departmentRates": {
+      "Cutting": 5,
+      "Patti Ironing & Belt Ironing": 2,
+      "Singer": 45,
+      "PowerTable": 12,
+      "kajaButton": 0,
+      "Checking": 2,
+      "Ironing": 1.5
+    }
+  },
+  {
+    "styleId": "AUSTYLETR002",
+    "name": "Boys Trouser-Checked",
+    "pattern": "TROUSER",
+    "departmentRates": {
+      "Cutting": 6,
+      "Patti Ironing & Belt Ironing": 2,
+      "Singer": 45,
+      "PowerTable": 12,
+      "kajaButton": 0,
+      "Checking": 2,
+      "Ironing": 1.5
+    }
+  },
+
+  {
+    "styleId": "AUSTYLEC001",
+    "name": "WAIST BTN COAT",
+    "pattern": "COAT",
+    "departmentRates": {
+      "Cutting": 8,
+      "Patti Ironing & Belt Ironing": 0,
+      "Singer": 35,
+      "PowerTable": 6,
+      "kajaButton": 4,
+      "Checking": 1.5,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLEC002",
+    "name": "WAIST ZIP COAT",
+    "pattern": "COAT",
+    "departmentRates": {
+      "Cutting": 8,
+      "Patti Ironing & Belt Ironing": 0,
+      "Singer": 38,
+      "PowerTable": 8,
+      "kajaButton": 0,
+      "Checking": 1.5,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLEC003",
+    "name": "Maalai Coat",
+    "pattern": "COAT",
+    "departmentRates": {
+      "Cutting": 11,
+      "Patti Ironing & Belt Ironing": 4.5,
+      "Singer": 48,
+      "PowerTable": 6,
+      "kajaButton": 3,
+      "Checking": 1.5,
+      "Ironing": 3
+    }
+  },
+  {
+    "styleId": "AUSTYLEC004",
+    "name": "Leppal Coat",
+    "pattern": "COAT",
+    "departmentRates": {
+      "Cutting": 11,
+      "Patti Ironing & Belt Ironing": 4.5,
+      "Singer": 48,
+      "PowerTable": 6,
+      "kajaButton": 3,
+      "Checking": 1.5,
+      "Ironing": 3
+    }
+  },
+  {
+    "styleId": "AUSTYLEC005",
+    "name": "High Neck Button Coat",
+    "pattern": "COAT",
+    "departmentRates": {
+      "Cutting": 9,
+      "Patti Ironing & Belt Ironing": 4.5,
+      "Singer": 43,
+      "PowerTable": 8,
+      "kajaButton": 0,
+      "Checking": 1.5,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLEC006",
+    "name": "V Neck Zip Coat",
+    "pattern": "COAT",
+    "departmentRates": {
+      "Cutting": 9,
+      "Patti Ironing & Belt Ironing": 3,
+      "Singer": 38,
+      "PowerTable": 8,
+      "kajaButton": 0,
+      "Checking": 1.5,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLEC007",
+    "name": "V Neck Button Coat With Packet",
+    "pattern": "COAT",
+    "departmentRates": {
+      "Cutting": 8,
+      "Patti Ironing & Belt Ironing": 3,
+      "Singer": 75,
+      "PowerTable": 2,
+      "kajaButton": 4,
+      "Checking": 1.5,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLEC008",
+    "name": "Staff Coat",
+    "pattern": "COAT",
+    "departmentRates": {
+      "Cutting": 10,
+      "Patti Ironing & Belt Ironing": 4.5,
+      "Singer": 75,
+      "PowerTable": 10,
+      "kajaButton": 3,
+      "Checking": 1.5,
+      "Ironing": 3
+    }
+  },
+  {
+    "styleId": "AUSTYLEC009",
+    "name": "Nani's Coat (Thuimai)",
+    "pattern": "COAT",
+    "departmentRates": {
+      "Cutting": 8,
+      "Patti Ironing & Belt Ironing": 1.5,
+      "Singer": 35,
+      "PowerTable": 10,
+      "kajaButton": 3,
+      "Checking": 1.5,
+      "Ironing": 3
+    }
+  },
+
+  {
+    "styleId": "AUSTYLESK001",
+    "name": "Round elastic skirt Plain",
+    "pattern": "SKIRT",
+    "departmentRates": {
+      "Cutting": 10,
+      "Patti Ironing & Belt Ironing": 0,
+      "Singer": 38,
+      "PowerTable": 11,
+      "kajaButton": 0,
+      "Checking": 3,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLESK002",
+    "name": "Round Elastic Skirt Tape",
+    "pattern": "SKIRT",
+    "departmentRates": {
+      "Cutting": 10,
+      "Patti Ironing & Belt Ironing": 0,
+      "Singer": 38,
+      "PowerTable": 15,
+      "kajaButton": 0,
+      "Checking": 3,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLESK003",
+    "name": "Multi Fleet Skirt OpenTop(SideZip)",
+    "pattern": "SKIRT",
+    "departmentRates": {
+      "Cutting": 10,
+      "Patti Ironing & Belt Ironing": 1,
+      "Singer": 55,
+      "PowerTable": 11,
+      "kajaButton": 0,
+      "Checking": 3,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLESK004",
+    "name": "Multi Fleet skirt 4` Belt",
+    "pattern": "SKIRT",
+    "departmentRates": {
+      "Cutting": 10,
+      "Patti Ironing & Belt Ironing": 1,
+      "Singer": 70,
+      "PowerTable": 11,
+      "kajaButton": 0,
+      "Checking": 3,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLESK005",
+    "name": "Multi Fleet skirt 4` skirt above 35",
+    "pattern": "SKIRT",
+    "departmentRates": {
+      "Cutting": 12,
+      "Patti Ironing & Belt Ironing": 1,
+      "Singer": 70,
+      "PowerTable": 15,
+      "kajaButton": 0,
+      "Checking": 3,
+      "Ironing": 2
+    }
+  },
+
+  {
+    "styleId": "AUSTYLEPF001",
+    "name": "Attached Pinafore",
+    "pattern": "PINOFORE",
+    "departmentRates": {
+      "Cutting": 10,
+      "Patti Ironing & Belt Ironing": 4,
+      "Singer": 80,
+      "PowerTable": 20,
+      "kajaButton": 0,
+      "Checking": 3,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLEPF002",
+    "name": "Atthur Pinofore",
+    "pattern": "PINOFORE",
+    "departmentRates": {
+      "Cutting": 10,
+      "Patti Ironing & Belt Ironing": 2,
+      "Singer": 32,
+      "PowerTable": 52,
+      "kajaButton": 0,
+      "Checking": 3,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLEPF003",
+    "name": "5 Button Pinafore(Piping)",
+    "pattern": "PINOFORE",
+    "departmentRates": {
+      "Cutting": 10,
+      "Patti Ironing & Belt Ironing": 0,
+      "Singer": 60,
+      "PowerTable": 15,
+      "kajaButton": 5,
+      "Checking": 3,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLEPF004",
+    "name": "5 Button Pinafore(Tower)",
+    "pattern": "PINOFORE",
+    "departmentRates": {
+      "Cutting": 10,
+      "Patti Ironing & Belt Ironing": 2,
+      "Singer": 70,
+      "PowerTable": 15,
+      "kajaButton": 5,
+      "Checking": 3,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLEPF005",
+    "name": "Jeans Modal Daungree",
+    "pattern": "PINOFORE",
+    "departmentRates": {
+      "Cutting": 10,
+      "Patti Ironing & Belt Ironing": 2,
+      "Singer": 45,
+      "PowerTable": 25,
+      "kajaButton": 0,
+      "Checking": 2,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLEPF004",
+    "name": "Normal Daungree",
+    "pattern": "PINOFORE",
+    "departmentRates": {
+      "Cutting": 10,
+      "Patti Ironing & Belt Ironing": 1.5,
+      "Singer": 45,
+      "PowerTable": 15,
+      "kajaButton": 0,
+      "Checking": 2,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLEPF005",
+    "name": "Attached Side Fleet Pinafore",
+    "pattern": "PINOFORE",
+    "departmentRates": {
+      "Cutting": 10,
+      "Patti Ironing & Belt Ironing": 3.5,
+      "Singer": 80,
+      "PowerTable": 26,
+      "kajaButton": 0,
+      "Checking": 3,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLEPF006",
+    "name": "Attached Pinafore T-Shirt",
+    "pattern": "PINOFORE",
+    "departmentRates": {
+      "Cutting": 10,
+      "Patti Ironing & Belt Ironing": 3.5,
+      "Singer": 80,
+      "PowerTable": 20,
+      "kajaButton": 0,
+      "Checking": 3,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLEPF007",
+    "name": "Top Side Open Pinofore",
+    "pattern": "PINOFORE",
+    "departmentRates": {
+      "Cutting": 10,
+      "Patti Ironing & Belt Ironing": 2,
+      "Singer": 70,
+      "PowerTable": 15,
+      "kajaButton": 0,
+      "Checking": 3,
+      "Ironing": 2
+    }
+  },
+
+  {
+    "styleId": "AUSTYLESP001",
+    "name": "CUT & SEW V Neck T-Shirt",
+    "pattern": "SPORTS T-SHIRT",
+    "departmentRates": {
+      "Cutting": 14,
+      "Patti Ironing & Belt Ironing": 1,
+      "Singer": 13,
+      "PowerTable": 17,
+      "kajaButton": 2,
+      "Checking": 1.5,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLESP002",
+    "name": "CUT & SEW Collar T-Shirt",
+    "pattern": "SPORTS T-SHIRT",
+    "departmentRates": {
+      "Cutting": 14,
+      "Patti Ironing & Belt Ironing": 1,
+      "Singer": 18,
+      "PowerTable": 17,
+      "kajaButton": 2,
+      "Checking": 1.5,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLESP003",
+    "name": "Recklon Sleeve",
+    "pattern": "SPORTS T-SHIRT",
+    "departmentRates": {
+      "Cutting": 8,
+      "Patti Ironing & Belt Ironing": 1,
+      "Singer": 20,
+      "PowerTable": 12,
+      "kajaButton": 2,
+      "Checking": 1.5,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLESP004",
+    "name": "Piping T-Shirt",
+    "pattern": "SPORTS T-SHIRT",
+    "departmentRates": {
+      "Cutting": 18,
+      "Patti Ironing & Belt Ironing": 1,
+      "Singer": 22,
+      "PowerTable": 25,
+      "kajaButton": 2,
+      "Checking": 1.5,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLESP005",
+    "name": "Plain Collar T-Shirt",
+    "pattern": "SPORTS T-SHIRT",
+    "departmentRates": {
+      "Cutting": 5,
+      "Patti Ironing & Belt Ironing": 1,
+      "Singer": 20,
+      "PowerTable": 8.5,
+      "kajaButton": 2,
+      "Checking": 1.5,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLESP006",
+    "name": "Plain Ready Collar T-Shirt",
+    "pattern": "SPORTS T-SHIRT",
+    "departmentRates": {
+      "Cutting": 7,
+      "Patti Ironing & Belt Ironing": 3,
+      "Singer": 22,
+      "PowerTable": 8.5,
+      "kajaButton": 2,
+      "Checking": 1.5,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLESP007",
+    "name": "Stripped Collar T-Shirt",
+    "pattern": "SPORTS T-SHIRT",
+    "departmentRates": {
+      "Cutting": 7,
+      "Patti Ironing & Belt Ironing": 1,
+      "Singer": 20,
+      "PowerTable": 8.5,
+      "kajaButton": 2,
+      "Checking": 1.5,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLESP008",
+    "name": "Plain Rib Neck T-Shirt",
+    "pattern": "SPORTS T-SHIRT",
+    "departmentRates": {
+      "Cutting": 5,
+      "Patti Ironing & Belt Ironing": 0,
+      "Singer": 3,
+      "PowerTable": 10,
+      "kajaButton": 0,
+      "Checking": 1.5,
+      "Ironing": 2
+    }
+  },
+  {
+    "styleId": "AUSTYLESP009",
+    "name": "Stripper Rib Neck T-Shirt",
+    "pattern": "SPORTS T-SHIRT",
+    "departmentRates": {
+      "Cutting": 7,
+      "Patti Ironing & Belt Ironing": 0,
+      "Singer": 3,
+      "PowerTable": 10,
+      "kajaButton": 0,
+      "Checking": 1.5,
+      "Ironing": 2
+    }
+  },
+
+  {
+    "styleId": "AUSTYLESB001",
+    "name": "Sports Pant",
+    "pattern": "SPORTS BOTTOM",
+    "departmentRates": {
+      "Cutting": 6,
+      "Patti Ironing & Belt Ironing": 0,
+      "Singer": 10,
+      "PowerTable": 16,
+      "kajaButton": 0,
+      "Checking": 2,
+      "Ironing": 2.5
+    }
+  },
+  {
+    "styleId": "AUSTYLESB002",
+    "name": "Sports Trouser",
+    "pattern": "SPORTS BOTTOM",
+    "departmentRates": {
+      "Cutting": 5,
+      "Patti Ironing & Belt Ironing": 0,
+      "Singer": 12,
+      "PowerTable": 15,
+      "kajaButton": 0,
+      "Checking": 2,
+      "Ironing": 1.5
+    }
+  },
+
+  {
+    "styleId": "AUSTYLESU001",
+    "name": "Chudi Pant",
+    "pattern": "SUDI PANT",
+    "departmentRates": {
+      "Cutting":5,
+      "Patti Ironing & Belt Ironing": 0,
+      "Singer": 0,
+      "PowerTable": 16,
+      "kajaButton": 0,
+      "Checking": 2,
+      "Ironing": 2.5
+    }
+  }
+]

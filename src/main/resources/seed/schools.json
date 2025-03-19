@@ -1,0 +1,15 @@
+[
+  { "schoolId": "AUSCH001", "name": "SARATHA MATRIC" },
+  { "schoolId": "AUSCH002", "name": "SARATHA CBSE" },
+  { "schoolId": "AUSCH003", "name": "SARATHA NEWGEN" },
+  { "schoolId": "AUSCH004", "name": "SARATHA TECHNO" },
+  { "schoolId": "AUSCH005", "name": "VELLALAR MATRIC" },
+  { "schoolId": "AUSCH006", "name": "SVGV MATRIC" },
+  { "schoolId": "AUSCH007", "name": "LITTLE FLOWER" },
+  { "schoolId": "AUSCH008", "name": "SSVM" },
+  { "schoolId": "AUSCH009", "name": "SNR MATRIC" },
+  { "schoolId": "AUSCH009", "name": "VELLALAR CBSE" },
+  { "schoolId": "AUSCH009", "name": "RASI INTERNATIONAL" },
+  { "schoolId": "AUSCH010", "name": "ST.JOSEPH MATRIC" }
+
+]

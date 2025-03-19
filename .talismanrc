@@ -1,0 +1,6 @@
+fileignoreconfig:
+- filename: src/main/java/com/appleUniform/au/bill/message/SmsService.java
+  checksum: b953e115f42fb5286a0021c2c69cddf094b6a0a24d8331e0e25ba3d2140850fc
+- filename: mvnw
+  checksum: 9bd82c104d9f02af78ace97ca594f24fe5595444aac20ee8aa875d4353de7090
+version: "1.0"

@@ -1,0 +1,15 @@
+[
+  { "workerId": "AUWC001", "name": "Devendiran", "department": "Cutting" },
+  { "workerId": "AUWC002", "name": "Uday", "department": "Cutting" },
+  { "workerId": "AUWS001", "name": "Ramki Unit I", "department": "Singer" },
+  { "workerId": "AUWS002", "name": "Maheswaran Unit II", "department": "Singer" },
+  { "workerId": "AUWS004", "name": "Nagaraj Unit III", "department": "Singer" },
+  { "workerId": "AUWS005", "name": "Ramesh Unit IV", "department": "Singer" },
+  { "workerId": "AUWS003", "name": "Shanmugam Unit V", "department": "Singer" },
+  { "workerId": "AUWP001", "name": "Bakiyaraj", "department": "PowerTable" },
+  { "workerId": "AUWP002", "name": "Leela", "department": "PowerTable" },
+  { "workerId": "AUWI001", "name": "Naveen", "department": "Ironing" },
+  { "workerId": "AUWQ001", "name": "Rani Akka", "department": "Checking" },
+  { "workerId": "AUWK001", "name": "Subash", "department": "KajaButton" },
+  { "workerId": "AUWQ002", "name": "Vijaya", "department": "Checking" }
+]
