@@ -106,7 +106,7 @@ public class JobCardService {
                         jobCard.getDepartment(),
                         jobCard.getQuantity(),
                         jobCard.getTotal(),
-                        jobCard.getDate(), // already LocalDate
+                        jobCard.getDate(),
                         schools.getName(),
                         jobCard.getRate(),
                         jobCard.getStandard()
