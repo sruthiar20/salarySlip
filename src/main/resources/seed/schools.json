@@ -4,12 +4,18 @@
   { "schoolId": "AUSCH003", "name": "SARATHA NEWGEN" },
   { "schoolId": "AUSCH004", "name": "SARATHA TECHNO" },
   { "schoolId": "AUSCH005", "name": "VELLALAR MATRIC" },
+  { "schoolId": "AUSCH009", "name": "VELLALAR CBSE" },
   { "schoolId": "AUSCH006", "name": "SVGV MATRIC" },
   { "schoolId": "AUSCH007", "name": "LITTLE FLOWER" },
   { "schoolId": "AUSCH008", "name": "SSVM" },
   { "schoolId": "AUSCH009", "name": "SNR MATRIC" },
-  { "schoolId": "AUSCH009", "name": "VELLALAR CBSE" },
   { "schoolId": "AUSCH009", "name": "RASI INTERNATIONAL" },
-  { "schoolId": "AUSCH010", "name": "ST.JOSEPH MATRIC" }
+  { "schoolId": "AUSCH010", "name": "ST.JOSEPH MATRIC" },
+  { "schoolId": "AUSCH010", "name": "MONFORT SATHY" },
+  { "schoolId": "AUSCH010", "name": "MONFORT SIVAGANGA" },
+  { "schoolId": "AUSCH010", "name": "SPROUTS" },
+  { "schoolId": "AUSCH010", "name": "BSR KIDS" },
+  { "schoolId": "AUSCH010", "name": "SHAAN QUEEN" },
+  { "schoolId": "AUSCH010", "name": "RAGAVENDRA" }
 
 ]
