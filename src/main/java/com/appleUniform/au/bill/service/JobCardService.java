@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -82,5 +83,39 @@ public class JobCardService {
 
     public List<JobCard> getJobCardsByWorker(String workerId) {
         return jobCardRepository.findByWorkerId(workerId);
+    }
+
+    public List<JobCardResponse> getAllJobCardResponses() {
+        List<JobCard> jobCards = jobCardRepository.findAll();
+        List<JobCardResponse> responseList = new ArrayList<>();
+
+        for (JobCard jobCard : jobCards) {
+            Worker worker = workerRepository.findById(jobCard.getWorkerId()).orElse(null);
+            Style style = styleRepository.findById(jobCard.getStyleId()).orElse(null);
+            Schools schools = schoolRepository.findById(jobCard.getSchoolId()).orElse(null);
+
+            if (worker != null && style != null && schools != null) {
+                LocalDate localDate = jobCard.getDate();
+
+                JobCardResponse response = new JobCardResponse(
+                        jobCard.getWorkerId(),
+                        jobCard.getStyleId(),
+                        worker.getName(),
+                        style.getName(),
+                        style.getPattern(),
+                        jobCard.getDepartment(),
+                        jobCard.getQuantity(),
+                        jobCard.getTotal(),
+                        jobCard.getDate(), // already LocalDate
+                        schools.getName(),
+                        jobCard.getRate(),
+                        jobCard.getStandard()
+                );
+                responseList.add(response);
+            }
+        }
+
+
+        return responseList;
     }
 }
