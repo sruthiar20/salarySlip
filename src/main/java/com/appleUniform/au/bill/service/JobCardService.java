@@ -72,7 +72,11 @@ public class JobCardService {
                     jobCard.getDate(),
                     schools.getName(),
                     rate,
-                    jobCard.getStandard()
+                    jobCard.getStandard(),
+                    jobCard.getAdvance(),
+                    jobCard.getDetectedAdvance(),
+                    jobCard.getAdvanceBalance(),
+                    jobCard.getFinalPay()
             );
 
             responseList.add(response);
@@ -109,7 +113,11 @@ public class JobCardService {
                         jobCard.getDate(),
                         schools.getName(),
                         jobCard.getRate(),
-                        jobCard.getStandard()
+                        jobCard.getStandard(),
+                        jobCard.getAdvance(),
+                        jobCard.getDetectedAdvance(),
+                        jobCard.getAdvanceBalance(),
+                        jobCard.getFinalPay()
                 );
                 responseList.add(response);
             }

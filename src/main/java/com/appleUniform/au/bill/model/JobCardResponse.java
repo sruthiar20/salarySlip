@@ -22,6 +22,10 @@ public class JobCardResponse {
     private String schoolName;
     private double rate;
     private String standard;
+    private Double advance;
+    private Double detectedAdvance;
+    private Double advanceBalance;
+    private Double finalPay;
 
 
 }

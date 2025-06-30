@@ -1,7 +1,6 @@
 
 package com.appleUniform.au.bill.model;
 
-import com.appleUniform.au.utils.Constants;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
@@ -23,5 +22,9 @@ public class JobCard {
     private LocalDate date;
     private String schoolId;
     private String standard;
+    private Double advance;
+    private Double detectedAdvance;
+    private Double advanceBalance;
+    private Double finalPay;
 
 }
