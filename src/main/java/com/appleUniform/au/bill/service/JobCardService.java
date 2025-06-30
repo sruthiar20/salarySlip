@@ -32,6 +32,9 @@ public class JobCardService {
     public List<JobCardResponse> addJobCards(List<JobCard> jobCards) {
         List<JobCardResponse> responseList = new ArrayList<>();
         boolean shiftSaved = false;
+        Style style = null;
+        Schools school = null;
+        Double rate = null;
 
         for (JobCard jobCard : jobCards) {
             Worker worker = workerRepository.findById(jobCard.getWorkerId()).orElse(null);
@@ -46,24 +49,11 @@ public class JobCardService {
                 continue;
             }
 
-            Style style = null;
-            Schools school = null;
-            Double rate = null;
-
             if (!isShift) {
                 style = styleRepository.findById(jobCard.getStyleId()).orElse(null);
                 school = schoolRepository.findById(jobCard.getSchoolId()).orElse(null);
 
-                if (style == null) {
-                    throw new IllegalArgumentException("Style not found!");
-                }
-                if (school == null) {
-                    throw new IllegalArgumentException("School not found!");
-                }
-
-                if (!Arrays.asList(Constants.STANDARDS).contains(jobCard.getStandard())) {
-                    throw new IllegalArgumentException("Invalid standard: " + jobCard.getStandard());
-                }
+                exceptionChecker(jobCard, style, school);
 
                 rate = style.getDepartmentRates() != null ? style.getDepartmentRates().get(worker.getDepartment()) : null;
                 if (rate == null) {
@@ -73,13 +63,7 @@ public class JobCardService {
                 double adjustedRate = rate;
                 int qty = jobCard.getQuantity();
 
-                if ("Cutting".equalsIgnoreCase(jobCard.getDepartment())) {
-                    if (qty >= 1 && qty <= 15) {
-                        adjustedRate = rate * 2;
-                    } else if (qty >= 16 && qty <= 20) {
-                        adjustedRate = rate * 1.5;
-                    }
-                }
+                adjustedRate = getAdjustedRate(jobCard, qty, adjustedRate, rate);
 
                 jobCard.setRate(adjustedRate);
                 jobCard.setTotal(adjustedRate * qty);
@@ -92,29 +76,36 @@ public class JobCardService {
             jobCard.setDate(LocalDate.now());
             jobCardRepository.save(jobCard);
 
-            JobCardResponse response = new JobCardResponse(
-                    jobCard.getWorkerId(),
-                    jobCard.getStyleId(),
-                    worker.getName(),
-                    style != null ? style.getName() : "",
-                    style != null ? style.getPattern() : "",
-                    jobCard.getDepartment(),
-                    jobCard.getQuantity(),
-                    jobCard.getTotal(),
-                    jobCard.getDate(),
-                    school != null ? school.getName() : "",
-                    jobCard.getRate(),
-                    jobCard.getStandard(),
-                    jobCard.getAdvance(),
-                    jobCard.getDetectedAdvance(),
-                    jobCard.getAdvanceBalance(),
-                    jobCard.getFinalPay()
-            );
+            JobCardResponse response = getJobCardResponse(jobCard, worker, style, school);
 
             responseList.add(response);
         }
 
         return responseList;
+    }
+
+    private static void exceptionChecker(JobCard jobCard, Style style, Schools school) {
+        if (style == null) {
+            throw new IllegalArgumentException("Style not found!");
+        }
+        if (school == null) {
+            throw new IllegalArgumentException("School not found!");
+        }
+
+        if (!Arrays.asList(Constants.STANDARDS).contains(jobCard.getStandard())) {
+            throw new IllegalArgumentException("Invalid standard: " + jobCard.getStandard());
+        }
+    }
+
+    private static double getAdjustedRate(JobCard jobCard, int qty, double adjustedRate, Double rate) {
+        if ("Cutting".equalsIgnoreCase(jobCard.getDepartment())) {
+            if (qty >= 1 && qty <= 15) {
+                adjustedRate = rate * 2;
+            } else if (qty >= 16 && qty <= 20) {
+                adjustedRate = rate * 1.5;
+            }
+        }
+        return adjustedRate;
     }
 
 
@@ -135,28 +126,33 @@ public class JobCardService {
             Style style = !isShift ? styleRepository.findById(jobCard.getStyleId()).orElse(null) : null;
             Schools school = !isShift ? schoolRepository.findById(jobCard.getSchoolId()).orElse(null) : null;
 
-            JobCardResponse response = new JobCardResponse(
-                    jobCard.getWorkerId(),
-                    jobCard.getStyleId(),
-                    worker.getName(),
-                    style != null ? style.getName() : "",
-                    style != null ? style.getPattern() : "",
-                    jobCard.getDepartment(),
-                    jobCard.getQuantity(),
-                    jobCard.getTotal(),
-                    jobCard.getDate(),
-                    school != null ? school.getName() : "",
-                    jobCard.getRate(),
-                    jobCard.getStandard(),
-                    jobCard.getAdvance(),
-                    jobCard.getDetectedAdvance(),
-                    jobCard.getAdvanceBalance(),
-                    jobCard.getFinalPay()
-            );
+            JobCardResponse response = getJobCardResponse(jobCard, worker, style, school);
 
             responseList.add(response);
         }
 
         return responseList;
+    }
+
+    private static JobCardResponse getJobCardResponse(JobCard jobCard, Worker worker, Style style, Schools school) {
+        JobCardResponse response = new JobCardResponse(
+                jobCard.getWorkerId(),
+                jobCard.getStyleId(),
+                worker.getName(),
+                style != null ? style.getName() : "",
+                style != null ? style.getPattern() : "",
+                jobCard.getDepartment(),
+                jobCard.getQuantity(),
+                jobCard.getTotal(),
+                jobCard.getDate(),
+                school != null ? school.getName() : "",
+                jobCard.getRate(),
+                jobCard.getStandard(),
+                jobCard.getAdvance(),
+                jobCard.getDetectedAdvance(),
+                jobCard.getAdvanceBalance(),
+                jobCard.getFinalPay()
+        );
+        return response;
     }
 }
