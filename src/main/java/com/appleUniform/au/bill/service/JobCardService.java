@@ -99,9 +99,9 @@ public class JobCardService {
 
     private static double getAdjustedRate(JobCard jobCard, int qty, double adjustedRate, Double rate) {
         if ("Cutting".equalsIgnoreCase(jobCard.getDepartment())) {
-            if (qty >= 1 && qty <= 15) {
+            if (qty >= 1 && qty <= 20) {
                 adjustedRate = rate * 2;
-            } else if (qty >= 16 && qty <= 20) {
+            } else if (qty >= 21 && qty <= 35) {
                 adjustedRate = rate * 1.5;
             }
         }
