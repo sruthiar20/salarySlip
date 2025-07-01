@@ -107,11 +107,28 @@ public class JobCardService {
             double advance = entry.getAdvance() != null ? entry.getAdvance() : 0.0;
             totalAdvance += advance;
             
-            double detectedAdvance = Math.min(advance, calculatedRate);
+            // Use provided values if available, otherwise calculate
+            double detectedAdvance;
+            if (entry.getDetectedAdvance() != null) {
+                detectedAdvance = entry.getDetectedAdvance();
+            } else {
+                detectedAdvance = Math.min(advance, calculatedRate);
+            }
             totalDetectedAdvance += detectedAdvance;
             
-            double advanceBalance = Math.max(0.0, advance - detectedAdvance);
-            double finalPay = calculatedRate - detectedAdvance;
+            double advanceBalance;
+            if (entry.getAdvanceBalance() != null) {
+                advanceBalance = entry.getAdvanceBalance();
+            } else {
+                advanceBalance = Math.max(0.0, advance - detectedAdvance);
+            }
+            
+            double finalPay;
+            if (entry.getFinalPay() != null) {
+                finalPay = entry.getFinalPay();
+            } else {
+                finalPay = calculatedRate - detectedAdvance;
+            }
 
             entry.setDepartment("Shift");
             entry.setRate(rate);
@@ -185,11 +202,29 @@ public class JobCardService {
 
             // Initialize advance to 0.0 if null
             double advance = jobCard.getAdvance() != null ? jobCard.getAdvance() : 0.0;
-            double detectedAdvance = Math.min(advance, total);
-            double advanceBalance = Math.max(0.0, advance - detectedAdvance);
-            double finalPay = total - detectedAdvance;
             
-            // Set the calculated advance values
+            // Use provided values if available, otherwise calculate
+            double detectedAdvance;
+            double advanceBalance;
+            
+            if (jobCard.getDetectedAdvance() != null) {
+                detectedAdvance = jobCard.getDetectedAdvance();
+            } else {
+                detectedAdvance = Math.min(advance, total);
+                jobCard.setDetectedAdvance(detectedAdvance);
+            }
+            
+            if (jobCard.getAdvanceBalance() != null) {
+                advanceBalance = jobCard.getAdvanceBalance();
+            } else {
+                advanceBalance = Math.max(0.0, advance - detectedAdvance);
+                jobCard.setAdvanceBalance(advanceBalance);
+            }
+            
+            // Calculate final pay
+            double finalPay = jobCard.getFinalPay() != null ? jobCard.getFinalPay() : total - detectedAdvance;
+            
+            // Set the values
             jobCard.setAdvance(advance);
             jobCard.setDetectedAdvance(detectedAdvance);
             jobCard.setAdvanceBalance(advanceBalance);
