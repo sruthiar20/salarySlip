@@ -1,4 +1,3 @@
-
 package com.appleUniform.au.bill.model;
 
 import lombok.Getter;
@@ -14,5 +13,6 @@ public class Worker {
     private String workerId;
     private String name;
     private String department;
-
+    private double rate;
+    private Double advance;
 }

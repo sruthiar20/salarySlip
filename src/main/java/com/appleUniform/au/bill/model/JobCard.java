@@ -26,5 +26,8 @@ public class JobCard {
     private Double detectedAdvance;
     private Double advanceBalance;
     private Double finalPay;
-
+    private double totalHours;
+    private double calculatedRate;
+    private String startTime;
+    private String endTime;
 }

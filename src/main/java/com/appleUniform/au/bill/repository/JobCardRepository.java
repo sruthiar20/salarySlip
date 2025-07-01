@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface JobCardRepository extends MongoRepository<JobCard, String> {
     List<JobCard> findByWorkerId(String workerId);
+    List<JobCard> findByWorkerIdOrderByDateDesc(String workerId);
 }
